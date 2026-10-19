@@ -7,7 +7,7 @@ import Animated, {
 } from 'react-native-reanimated';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { BoothBuddyLogo } from '@/components/BoothBuddyLogo';
+import { OctoVendoLogo } from '@/components/OctoVendoLogo';
 import { PasscodeKeypad } from '@/components/onboarding/PasscodeKeypad';
 import { StepDots } from '@/components/onboarding/StepDots';
 import { digitPopScale, shakeTranslateX } from '@/components/onboarding/setup-motion';
@@ -148,7 +148,7 @@ export function GrownUpSetupCard({
   return (
     <SafeAreaView style={styles.page}>
       <View style={styles.topBar}>
-        <BoothBuddyLogo variant="long" />
+        <OctoVendoLogo variant="long" />
       </View>
 
       <View style={styles.center}>

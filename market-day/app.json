@@ -1,6 +1,6 @@
 {
   "expo": {
-    "name": "Booth Buddy",
+    "name": "OctoVendo",
     "slug": "market-day",
     "version": "1.0.0",
     "orientation": "portrait",
@@ -42,7 +42,7 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/logo-app.png",
+          "image": "./assets/images/logo-long.png",
           "resizeMode": "contain",
           "backgroundColor": "#EDE9F5"
         }
@@ -50,8 +50,8 @@
       [
         "expo-image-picker",
         {
-          "photosPermission": "Booth Buddy uses your photo library so you can add pictures of items for staff and customers to see.",
-          "cameraPermission": "Booth Buddy uses the camera so you can photograph items for staff and customers to see.",
+          "photosPermission": "OctoVendo uses your photo library so you can add pictures of items for staff and customers to see.",
+          "cameraPermission": "OctoVendo uses the camera so you can photograph items for staff and customers to see.",
           "microphonePermission": false
         }
       ],

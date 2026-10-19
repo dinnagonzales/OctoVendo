@@ -1,18 +1,17 @@
 import { useEffect } from 'react';
-import { Image, StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, Text, View } from 'react-native';
 import Animated, {
   useAnimatedStyle,
   useSharedValue,
 } from 'react-native-reanimated';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
+import { OctoVendoLogo } from '@/components/OctoVendoLogo';
 import { SetupPrimaryButton } from '@/components/onboarding/SetupPrimaryButton';
 import { checkmarkScale } from '@/components/onboarding/setup-motion';
 import { BrandCard } from '@/components/ui/BrandCard';
 import { colors } from '@/constants/theme';
 import { fonts } from '@/constants/visual';
-
-const buddyImage = require('@/assets/images/buddy.png');
 
 type SetupSuccessCardProps = {
   firstName: string;
@@ -31,7 +30,7 @@ export function SetupSuccessCard({
     scale.value = checkmarkScale(reduceMotion);
   }, [reduceMotion, scale]);
 
-  const buddyStyle = useAnimatedStyle(() => ({
+  const logoStyle = useAnimatedStyle(() => ({
     transform: [{ scale: scale.value }],
   }));
 
@@ -41,13 +40,8 @@ export function SetupSuccessCard({
     <SafeAreaView style={styles.page}>
       <View style={styles.center}>
         <View style={styles.stack}>
-          <Animated.View style={[styles.buddyWrap, buddyStyle]} pointerEvents="none">
-            <Image
-              source={buddyImage}
-              style={styles.buddy}
-              resizeMode="contain"
-              accessibilityLabel="Booth Buddy"
-            />
+          <Animated.View style={[styles.logoWrap, logoStyle]} pointerEvents="none">
+            <OctoVendoLogo variant="app" style={styles.logo} />
           </Animated.View>
 
           <BrandCard surface="peach" style={styles.card}>
@@ -82,11 +76,11 @@ const styles = StyleSheet.create({
     maxWidth: 380,
     alignItems: 'center',
   },
-  buddyWrap: {
+  logoWrap: {
     zIndex: 2,
     marginBottom: -36,
   },
-  buddy: {
+  logo: {
     width: 112,
     height: 112,
   },

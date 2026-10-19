@@ -1,5 +1,5 @@
 /**
- * Booth Buddy brand tokens — single source of truth for StyleSheet, SVG, QR, and Tailwind.
+ * OctoVendo brand tokens — single source of truth for StyleSheet, SVG, QR, and Tailwind.
  * Soft lavender POS palette with purple primary actions.
  */
 export const tokens = {

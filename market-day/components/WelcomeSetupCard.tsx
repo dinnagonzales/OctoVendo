@@ -1,4 +1,4 @@
-import { BoothBuddyLogo } from '@/components/BoothBuddyLogo';
+import { OctoVendoLogo } from '@/components/OctoVendoLogo';
 import { BrandButton } from '@/components/ui/BrandButton';
 import { BrandCard } from '@/components/ui/BrandCard';
 import { UiIcon } from '@/components/ui/UiIcon';
@@ -17,12 +17,12 @@ export function WelcomeSetupCard({ onContinue }: WelcomeSetupCardProps) {
   return (
     <SafeAreaView style={styles.page}>
       <View style={styles.topBar}>
-        <BoothBuddyLogo variant="long" />
+        <OctoVendoLogo variant="long" />
       </View>
 
       <View style={styles.center}>
         <BrandCard surface="peach" style={styles.card}>
-          <Text style={styles.title}>Welcome to Booth Buddy!</Text>
+          <Text style={styles.title}>Welcome to OctoVendo!</Text>
           <Text style={styles.subtext}>Ring up sales from a phone or tablet.</Text>
 
           <View style={styles.sections}>

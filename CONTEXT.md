@@ -1,4 +1,4 @@
-# Booth Buddy
+# OctoVendo
 
 A booth-friendly point-of-sale app for in-person craft fairs and markets. Replaces a spreadsheet at the booth with a fast, tappable interface staff operate solo, while the owner handles item setup and data export for Excel reconciliation.
 
@@ -139,7 +139,7 @@ The person operating the app at the booth during a Market Day — rings up sales
 _Avoid_: User, cashier, vendor, kid
 
 **Owner** (code: Admin):
-The shop owner who sets up items and prices before a Market Day and exports sales data afterward. On first launch, completes a setup wizard (**Welcome to Booth Buddy!** with shop/profile info, then Pass Code). Adding the first Item happens on Home via **Get your shop ready**. Owner settings shows sales totals (item count, total revenue, Cash vs Venmo/Zelle breakdown), Market Day management, item setup, and export — none of which is visible on staff's Home.
+The shop owner who sets up items and prices before a Market Day and exports sales data afterward. On first launch, completes a setup wizard (**Welcome to OctoVendo!** with shop/profile info, then Pass Code). Adding the first Item happens on Home via **Get your shop ready**. Owner settings shows sales totals (item count, total revenue, Cash vs Venmo/Zelle breakdown), Market Day management, item setup, and export — none of which is visible on staff's Home.
 _Avoid_: Parent, grown-up, admin (UI label only)
 
 **Owner settings** (code: grown-up settings):

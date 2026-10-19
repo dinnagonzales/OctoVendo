@@ -82,7 +82,7 @@ export function ParentalGatePrompt({
       <View style={styles.container}>
         <Text style={styles.title}>Forgot Pass Code?</Text>
         <Text style={styles.body}>
-          We can&apos;t recover the old code. Erase everything on this device and set Booth Buddy up
+          We can&apos;t recover the old code. Erase everything on this device and set OctoVendo up
           again.
         </Text>
         <Pressable

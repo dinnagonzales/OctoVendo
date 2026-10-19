@@ -2,9 +2,9 @@
 
 **Type:** HITL  
 **Status:** shipped (content lives in `web/index.html`; deploy via GitHub Pages)  
-**Audience:** Web page agent building **Booth Buddy** help / FAQ pages  
+**Audience:** Web page agent building **OctoVendo** help / FAQ pages  
 **Tone:** Simple words a kid can read. Owner steps clearly labeled.  
-**Sync note (Sep 20 2026):** Help site aligned with latest app — **Welcome to Booth Buddy!** onboarding (long wordmark, no circle badge; buddy peeks on success); Home **Get your shop ready** checklist (first item required; payment/logo optional; **Hide** forever); idle Home always **Start Market Day** / **Update Inventory** / **Go to Sales**; Pass Code opt-in via lock-on-exit; Owner / Staff labels; tips vs order totals; Payment collapsed by default; Today’s Menu drag-to-reorder. Prefer Owner / Staff over Seller / Grown-up / Admin in new pages. Domain event name **Market Day** stays.
+**Sync note (Sep 20 2026):** Help site aligned with latest app — **Welcome to OctoVendo!** onboarding (long wordmark, no circle badge; buddy peeks on success); Home **Get your shop ready** checklist (first item required; payment/logo optional; **Hide** forever); idle Home always **Start Market Day** / **Update Inventory** / **Go to Sales**; Pass Code opt-in via lock-on-exit; Owner / Staff labels; tips vs order totals; Payment collapsed by default; Today’s Menu drag-to-reorder. Prefer Owner / Staff over Seller / Grown-up / Admin in new pages. Domain event name **Market Day** stays.
 
 ---
 
@@ -27,7 +27,7 @@ Kids never see **cost** (what you paid) or **profit**.
 
 | Page slug | Title | Audience |
 |-----------|-------|----------|
-| `/` | Welcome to Booth Buddy | Everyone |
+| `/` | Welcome to OctoVendo | Everyone |
 | `/sell` | How to sell something | Seller |
 | `/payment` | How to take payment | Seller |
 | `/invoice-numbers` | What are invoice numbers? | Seller |
@@ -89,11 +89,11 @@ Kids never see **cost** (what you paid) or **profit**.
 
 ---
 
-## `/` — Welcome to Booth Buddy
+## `/` — Welcome to OctoVendo
 
 **For staff**
 
-Booth Buddy is your shop on a phone or tablet. A **Market Day** is one fair/booth day.
+OctoVendo is your shop on a phone or tablet. A **Market Day** is one fair/booth day.
 
 1. Tap **Make a Sale** to ring up a customer anytime.
 2. When a grown-up has started a **Market Day**, you see today's **Menu** and a colorful banner at the top — those sales count for that day.
@@ -397,7 +397,7 @@ Kids see a simpler view (no profit) from the **Market Day banner** on the home s
 
 **For owners (first launch only)**
 
-1. Open the app. You’ll see **Welcome to Booth Buddy!** with the Booth Buddy wordmark (same as Home).
+1. Open the app. You’ll see **Welcome to OctoVendo!** with the OctoVendo wordmark (same as Home).
 2. Enter **business name** and **first name** (last name optional). Tap **Continue**.
 3. Set a **4-digit Pass Code**, then confirm it.
 4. On the success screen, tap **Go to my shop**.
@@ -614,10 +614,10 @@ This works only for the **most recently** closed day, and only until you **expor
 
 ## Visual / brand notes for web agent
 
-Friendly, colorful, kid-safe — match **Booth Buddy** logo palette (peach/coral), not old purple mock.
+Friendly, colorful, kid-safe — match **OctoVendo** logo palette (peach/coral), not old purple mock.
 
 - Fonts (web): **Fredoka** headings, **Nunito** body
-- App name: **Booth Buddy**
+- App name: **OctoVendo**
 - Domain event: **Market Day** (still the selling-day concept)
 - Icon motifs: logo, 🛒 sell, ⚙️ owner settings, 📦 inventory
 

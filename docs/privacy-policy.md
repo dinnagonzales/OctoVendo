@@ -1,14 +1,14 @@
-# Booth Buddy — Privacy Policy
+# OctoVendo — Privacy Policy
 
 **Effective date:** August 28, 2026  
-**App:** Booth Buddy (iOS)  
+**App:** OctoVendo (iOS)  
 **Contact:** Replace with your support email before publishing (e.g. `hello@yourdomain.com`).
 
 ---
 
 ## Summary
 
-Booth Buddy is a **local-first** point-of-sale app for craft-fair and market booths. **We do not operate servers that collect your shop data.** Sales, inventory, and settings stay on your device unless **you** export or share them (for example, a CSV through the iOS share sheet).
+OctoVendo is a **local-first** point-of-sale app for craft-fair and market booths. **We do not operate servers that collect your shop data.** Sales, inventory, and settings stay on your device unless **you** export or share them (for example, a CSV through the iOS share sheet).
 
 We do **not** sell data, show ads, or use third-party analytics.
 
@@ -16,7 +16,7 @@ We do **not** sell data, show ads, or use third-party analytics.
 
 ## Who this app is for
 
-Booth Buddy is listed in the App Store **Business** category. **Staff** can log sales at the booth. The **Owner** sets up items, manages Market Days, and exports data behind a **Pass Code**. Staff do not see item cost or profit totals.
+OctoVendo is listed in the App Store **Business** category. **Staff** can log sales at the booth. The **Owner** sets up items, manages Market Days, and exports data behind a **Pass Code**. Staff do not see item cost or profit totals.
 
 ---
 
@@ -39,7 +39,7 @@ We **never** store your Pass Code in readable form.
 
 ## Information we do not collect
 
-Booth Buddy v1 does **not**:
+OctoVendo v1 does **not**:
 
 - Require an account or login
 - Transmit shop data to our servers (we have none)
@@ -68,7 +68,7 @@ We do not receive copies of exports or shared files.
 
 ## Children's privacy
 
-Booth Buddy is designed so staff can sell without seeing bookkeeping details (cost, profit, or sales dashboards). The owner **Pass Code** protects owner-only areas.
+OctoVendo is designed so staff can sell without seeing bookkeeping details (cost, profit, or sales dashboards). The owner **Pass Code** protects owner-only areas.
 
 We do not knowingly collect personal information from children on our servers — because we do not collect data on servers at all. Optional **sale names** or **notes** that an owner types (for example a customer's first name) are stored locally under the owner's control.
 
@@ -81,7 +81,7 @@ If you believe a minor's information was entered into the app in error, cancel t
 - Data remains on your device until you delete it (sales, items), end/remove market days, or uninstall the app.
 - **Forgot your code?** (factory reset) erases all shop data on that device and restarts setup.
 
-There is no cloud backup from Booth Buddy v1. Keep exports you care about in Files or email.
+There is no cloud backup from OctoVendo v1. Keep exports you care about in Files or email.
 
 ---
 

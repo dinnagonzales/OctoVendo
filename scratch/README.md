@@ -1,6 +1,6 @@
 # Scratch — local issue tracker
 
-Lightweight tracker for **Booth Buddy** MVP work. Not synced to GitHub or any external board.
+Lightweight tracker for **OctoVendo** MVP work. Not synced to GitHub or any external board.
 
 **Source:** [PRD.md](../PRD.md) · [CONTEXT.md](../CONTEXT.md) · grill session Aug 28, 2026  
 **Branch snapshot:** `master` (Sep 18, 2026) · Apple Dev enrolled, ASC **Pending** · see [docs/testflight-when-apple-active.md](../docs/testflight-when-apple-active.md)
@@ -23,7 +23,7 @@ Lightweight tracker for **Booth Buddy** MVP work. Not synced to GitHub or any ex
 | [006](issues/006-export-market-day-csv.md) | Export Closed Market Day (CSV + share sheet) | AFK | 002, 004 | done |
 | [007](issues/007-running-tab.md) | Running Tab: off-day sales + preorders + date-range export | AFK | 001, 003 | open (near done) |
 | [008](issues/008-item-photos.md) | Optional Item photos | AFK | 003 | done (device check left) |
-| [009](issues/009-visual-polish.md) | Visual polish (fonts + Booth Buddy brand) | HITL | — | open (HITL) |
+| [009](issues/009-visual-polish.md) | Visual polish (fonts + OctoVendo brand) | HITL | — | open (HITL) |
 | [010](issues/010-app-store-submission.md) | App Store / TestFlight | HITL | Apple Active | open (enrolled, Pending) |
 | [011](issues/011-market-day-menu.md) | Market Day Menu (default all Items, remove, sold out) | AFK | 002, 003 | done |
 | [012](issues/012-web-help-site-content.md) | Web help site content (features + FAQ) | HITL | — | open |
@@ -39,7 +39,7 @@ Lightweight tracker for **Booth Buddy** MVP work. Not synced to GitHub or any ex
 
 ## Already shipped (scaffold + post-grill)
 
-- Rebrand → **Booth Buddy** (Owner / Staff copy, logo palette)
+- Rebrand → **OctoVendo** (Owner / Staff copy, logo palette)
 - Staff sell flow: Home Items → **Make a Sale** or **+ Pre-order** → menu steppers + cart → payment → celebration → Fix
 - Off-day / Running Tab checkout + **Sales** tab all-time list + date-range CSV export UI
 - Preorders tab: prep summary, overdue/upcoming, printable export, pickup payment, **Mark Delivered**

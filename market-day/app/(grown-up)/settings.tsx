@@ -4,7 +4,7 @@ import { useCallback, useEffect, useState } from 'react';
 import { Alert, Pressable, ScrollView, StyleSheet, Text, View } from 'react-native';
 import { Store, XCircle } from 'lucide-react-native';
 
-import { BoothBuddyLogo } from '@/components/BoothBuddyLogo';
+import { OctoVendoLogo } from '@/components/OctoVendoLogo';
 import { AdminSalesList } from '@/components/AdminSalesList';
 import { ExpandableCard } from '@/components/ExpandableCard';
 import { GrownUpScreenHeader } from '@/components/GrownUpScreenHeader';
@@ -144,7 +144,7 @@ export default function SettingsScreen() {
         <ScrollView contentContainerStyle={styles.emptyScrollContent} showsVerticalScrollIndicator={false}>
           <View style={styles.emptyWrap}>
             <View style={styles.emptyBadge}>
-              <BoothBuddyLogo variant="full" style={styles.emptyLogo} />
+              <OctoVendoLogo variant="app" style={styles.emptyLogo} />
             </View>
             <Text style={styles.emptyTitle}>No market day yet</Text>
             <Text style={styles.emptyBody}>Start one to track today&apos;s sales.</Text>

@@ -1,4 +1,4 @@
-# 009 — Visual polish (fonts + Booth Buddy brand)
+# 009 — Visual polish (fonts + OctoVendo brand)
 
 **Type:** HITL  
 **Status:** open (code shipped — iPad sign-off pending)  

@@ -9,7 +9,7 @@ type UiIconProps = LucideProps & {
   icon: LucideIcon;
 };
 
-/** Shared defaults for Booth Buddy chrome icons (Lucide). */
+/** Shared defaults for OctoVendo chrome icons (Lucide). */
 export function UiIcon({
   icon: Icon,
   size = UI_ICON_SIZE,

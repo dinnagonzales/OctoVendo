@@ -10,7 +10,7 @@ import Animated, {
 } from 'react-native-reanimated';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { BoothBuddyLogo } from '@/components/BoothBuddyLogo';
+import { OctoVendoLogo } from '@/components/OctoVendoLogo';
 import { colors } from '@/constants/theme';
 import { fonts } from '@/constants/visual';
 
@@ -54,11 +54,11 @@ export function SetupSplash({ progress, reduceMotion = false, onReady }: SetupSp
   return (
     <SafeAreaView style={styles.page}>
       <View style={styles.topBar}>
-        <BoothBuddyLogo variant="long" />
+        <OctoVendoLogo variant="long" />
       </View>
 
       <View style={styles.center}>
-        <Text style={styles.welcome}>Welcome to Booth Buddy!</Text>
+        <Text style={styles.welcome}>Welcome to OctoVendo!</Text>
 
         <View
           accessibilityRole="progressbar"

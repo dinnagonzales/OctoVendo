@@ -10,7 +10,7 @@ Full checklist: [app-store-submission-checklist.md](./app-store-submission-check
 
 | Thing | Value |
 |-------|--------|
-| App name | **Booth Buddy** |
+| App name | **OctoVendo** |
 | Bundle ID | `com.dinnagonzales.boothbuddy` |
 | Android package | `com.dinnagonzales.boothbuddy` |
 | Expo account | `titadinna` |
@@ -31,7 +31,7 @@ Full checklist: [app-store-submission-checklist.md](./app-store-submission-check
 ### B. Create App Store Connect app
 - [ ] **Apps → + → New App**
 - [ ] Platform: iOS
-- [ ] Name: **Booth Buddy**
+- [ ] Name: **OctoVendo**
 - [ ] Bundle ID: **`com.dinnagonzales.boothbuddy`** (register under Identifiers first if missing)
 - [ ] SKU: `boothbuddy-001`
 - [ ] Create
@@ -47,9 +47,9 @@ eas build --platform ios --profile production --auto-submit
 - [ ] Wait ~10–15 min for Apple processing (TestFlight → iOS Builds)
 
 ### D. Install on iPad (private)
-- [ ] App Store Connect → Booth Buddy → **TestFlight**
+- [ ] App Store Connect → OctoVendo → **TestFlight**
 - [ ] **Internal Testing** → create group → add your Apple ID
-- [ ] iPad: install **TestFlight** app → accept invite → **Install** Booth Buddy
+- [ ] iPad: install **TestFlight** app → accept invite → **Install** OctoVendo
 - [ ] Smoke test: setup → Make a Sale → payment → Settings gate
 
 ### E. Before public App Store (later, optional)

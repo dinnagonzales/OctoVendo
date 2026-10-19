@@ -6,7 +6,7 @@ import Animated, {
 } from 'react-native-reanimated';
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-import { BoothBuddyLogo } from '@/components/BoothBuddyLogo';
+import { OctoVendoLogo } from '@/components/OctoVendoLogo';
 import { FloatingLabelInput } from '@/components/onboarding/FloatingLabelInput';
 import { SetupPrimaryButton } from '@/components/onboarding/SetupPrimaryButton';
 import { StepDots } from '@/components/onboarding/StepDots';
@@ -82,14 +82,14 @@ export function ProfileSetupCard({
   return (
     <SafeAreaView style={styles.page}>
       <View style={styles.topBar}>
-        <BoothBuddyLogo variant="long" />
+        <OctoVendoLogo variant="long" />
       </View>
 
       <View style={styles.center}>
         <StepDots activeIndex={0} />
         <BrandCard surface="peach" style={styles.card}>
           <Animated.View style={shakeStyle}>
-            <Text style={styles.title}>Welcome to Booth Buddy!</Text>
+            <Text style={styles.title}>Welcome to OctoVendo!</Text>
             <Text style={styles.subtext}>Just for you — your staff won&apos;t see this.</Text>
 
             <View style={styles.form}>

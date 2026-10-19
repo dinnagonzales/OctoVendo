@@ -11,7 +11,7 @@ IDs, ASC create steps, `eas build` command, TestFlight install.
 
 ## What to build
 
-Ship **Booth Buddy** as standalone iOS app (not Expo Go): EAS production build, TestFlight on family iPad, privacy policy URL, App Store metadata + screenshots, submit for review (or stay TestFlight-only).
+Ship **OctoVendo** as standalone iOS app (not Expo Go): EAS production build, TestFlight on family iPad, privacy policy URL, App Store metadata + screenshots, submit for review (or stay TestFlight-only).
 
 **Category:** Business (not Kids). Review notes: Pass Code gate; Staff never sees cost/totals; local-only, no login.
 

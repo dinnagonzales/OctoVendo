@@ -22,7 +22,7 @@ import {
   type LucideIcon,
 } from 'lucide-react-native';
 
-import { BoothBuddyLogo } from '@/components/BoothBuddyLogo';
+import { OctoVendoLogo } from '@/components/OctoVendoLogo';
 import { HomeSetupChecklistCard } from '@/components/HomeSetupChecklistCard';
 import { PassCodeSheet } from '@/components/PassCodeSheet';
 import { Screen } from '@/components/Screen';
@@ -457,7 +457,7 @@ export default function HomeScreen() {
               <UiIcon icon={Settings} size={20} color={colors.inkSoft} />
             </Pressable>
             <View pointerEvents="none" style={styles.titleWrap}>
-              <BoothBuddyLogo variant="long" />
+              <OctoVendoLogo variant="long" />
             </View>
             {hasInventory ? (
               <Pressable

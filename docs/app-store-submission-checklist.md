@@ -1,4 +1,4 @@
-# App Store Submission Checklist — Booth Buddy
+# App Store Submission Checklist — OctoVendo
 
 > **Membership Pending?** Open **[testflight-when-apple-active.md](./testflight-when-apple-active.md)** when Apple flips to Active — IDs + step-by-step TestFlight.
 
@@ -56,7 +56,7 @@ Draft ready — [docs/privacy-policy.md](./privacy-policy.md), publishable page 
 
 ## 4. App Store Connect listing
 
-- [ ] Create app record (name **Booth Buddy**, bundle ID, SKU `boothbuddy-001`)
+- [ ] Create app record (name **OctoVendo**, bundle ID, SKU `boothbuddy-001`)
 - [ ] Category: **Business**
 - [ ] Screenshots (iPad required — `supportsTablet: true`; add iPhone if listing as universal)
 - [ ] Description, keywords, support URL
@@ -78,7 +78,7 @@ Draft ready — [docs/privacy-policy.md](./privacy-policy.md), publishable page 
 ## Already done
 
 - Core MVP: setup, market days, catalog, sales dashboard, CSV export, menu, owner edit, Running Tab UI, preorders (001–006, 011, most of 007, 005)
-- Rebrand Booth Buddy + Owner/Staff copy + brand palette
+- Rebrand OctoVendo + Owner/Staff copy + brand palette
 - App name, icon, splash in `market-day/assets/`
 - Privacy policy draft + HTML page
 - ADR: Business category, local-only, no analytics/ads

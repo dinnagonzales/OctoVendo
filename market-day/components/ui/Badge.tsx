@@ -42,7 +42,7 @@ export function Badge({ label, tone = 'brand', style, labelStyle }: BadgeProps) 
   );
 }
 
-/** Alias for Badge — echoes the "BOOTH BUDDY" wordmark pill. */
+/** Alias for Badge — echoes the OctoVendo wordmark pill. */
 export const Pill = Badge;
 
 const styles = StyleSheet.create({

@@ -1,10 +1,10 @@
-# Booth Buddy — Product Requirements Document (v0.2)
+# OctoVendo — Product Requirements Document (v0.2)
 
 > Resolved via grill session Aug 28, 2026. Domain language lives in [CONTEXT.md](./CONTEXT.md).
 
 ## Overview
 
-Booth Buddy is a booth-friendly point-of-sale app for a young vendor (age 12) selling 3D-printed items at in-person craft fairs and markets. It replaces a spreadsheet workflow with a fast, tappable interface staff can operate solo during a busy sales session, while giving the owner item/cost setup and data export for Excel reconciliation.
+OctoVendo is a booth-friendly point-of-sale app for a young vendor (age 12) selling 3D-printed items at in-person craft fairs and markets. It replaces a spreadsheet workflow with a fast, tappable interface staff can operate solo during a busy sales session, while giving the owner item/cost setup and data export for Excel reconciliation.
 
 ## Problem
 
@@ -36,7 +36,7 @@ The current Excel workbook works for after-the-fact bookkeeping but is too slow 
 
 ### First launch (admin setup wizard)
 
-1. Owner opens app → **Welcome to Booth Buddy!** → shop/profile → set Pass Code → success.
+1. Owner opens app → **Welcome to OctoVendo!** → shop/profile → set Pass Code → success.
 2. On **Home**, **Get your shop ready** asks for the first Item (required) plus optional payment/logo; **Hide** dismisses the checklist forever after the first item.
 3. Staff can browse Home (Items menu). **Make a Sale** is available once inventory exists. Idle Home (no Market Day) always shows **Start Market Day**, **Update Inventory**, and **Go to Sales**.
 

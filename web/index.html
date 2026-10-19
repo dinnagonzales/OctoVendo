@@ -3,9 +3,9 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Booth Buddy Help</title>
-<link rel="icon" type="image/png" href="images/favicon.png">
-<link rel="apple-touch-icon" href="images/icon.png">
+<title>OctoVendo Help</title>
+<link rel="icon" type="image/png" href="images/logo-app.png">
+<link rel="apple-touch-icon" href="images/logo-app.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@400;600;700;800;900&display=swap" rel="stylesheet">
@@ -316,9 +316,9 @@
 <div class="shell">
   <aside class="sidebar" id="sidebar">
     <div class="brand">
-      <span class="logo"><img src="images/logo-app.png" alt="Booth Buddy" width="40" height="40"></span>
+      <span class="logo"><img src="images/logo-app.png" alt="OctoVendo" width="40" height="40"></span>
       <div>
-        <span class="word">Booth Buddy</span>
+        <span class="word">OctoVendo</span>
         <span class="sub">Help center</span>
       </div>
     </div>
@@ -332,7 +332,7 @@
   <div class="main">
     <div class="mobilebar">
       <button class="menu-toggle" id="menuToggle" aria-label="Open menu"><i data-lucide="menu" class="ui-icon"></i></button>
-      <span class="brand" style="padding:0;"><span class="logo"><img src="images/logo-app.png" alt="" width="28" height="28"></span><span class="word" style="font-size:16px;">Booth Buddy Help</span></span>
+      <span class="brand" style="padding:0;"><span class="logo"><img src="images/logo-app.png" alt="" width="28" height="28"></span><span class="word" style="font-size:16px;">OctoVendo Help</span></span>
       <span style="width:40px;"></span>
     </div>
     <div id="pageRoot"></div>
@@ -429,19 +429,19 @@ var GLOSSARY = [
 var PAGES = {};
 
 PAGES['home'] = {
-  title:'Welcome to Booth Buddy', icon:'brand', section:'home', audience:'everyone', crumb:'Welcome',
+  title:'Welcome to OctoVendo', icon:'brand', section:'home', audience:'everyone', crumb:'Welcome',
   body:
-    '<div class="hero"><div class="kicker">Booth Buddy help center</div><h1>' + brandMark(36) + ' Welcome to Booth Buddy</h1>' +
+    '<div class="hero"><div class="kicker">OctoVendo help center</div><h1>' + brandMark(36) + ' Welcome to OctoVendo</h1>' +
     '<p>Booth-ready point of sale for craft fairs and markets — big taps for staff, Pass Code tools for owners, everything on your device.</p></div>' +
     '<div class="card"><h2>What it is</h2>' +
-    '<p>Booth Buddy helps you ring up a multi-item sale in seconds — no spreadsheets, formulas, or cost math at the booth.</p>' +
+    '<p>OctoVendo helps you ring up a multi-item sale in seconds — no spreadsheets, formulas, or cost math at the booth.</p>' +
     '<p><b>Staff</b> get big taps: pick items, take cash or Venmo/Zelle, celebrate the sale.</p>' +
     '<p><b>Owners</b> get inventory, Market Days, preorders, and Excel-ready exports behind a Pass Code — so staff never see costs or profit.</p>' +
     '<p>Everything stays on your device. No accounts or cloud login. Sales do not leave the iPad for a server. You keep them in local storage and export when you want reconciliation.</p>' +
     '<p>App updates keep your past sales on the device — the shop database migrates in place, including cancelled sales and invoice history.</p>' +
     '<p>One device, one Pass Code for owners, and a selling flow staff can run alone when the booth is busy.</p></div>' +
     '<div class="card">' + sectionHead('shopping-cart','For staff') +
-    '<p>Booth Buddy is your shop on a phone or tablet. A <b>Market Day</b> is one fair or booth day.</p>' +
+    '<p>OctoVendo is your shop on a phone or tablet. A <b>Market Day</b> is one fair or booth day.</p>' +
     steps([
       'Under <b>Available Items</b>, tap an item — or tap ' + pill('pill-purple', icon('shopping-cart', 16, 'on-dark') + ' Make a Sale') + ' — to ring up a customer.',
       'When an owner has started a <b>Market Day</b>, you see today’s <b>Menu</b> and a ticket banner at the top (shop logo/name, market name, amount sold without tips, sale count) — those sales count for that day.',
@@ -474,7 +474,7 @@ PAGES['sell'] = {
   body:
     '<div class="card">' +
     steps([
-      'Open Booth Buddy on the home screen.',
+      'Open OctoVendo on the home screen.',
       'Under <b>Available Items</b>, tap an item to start with quantity 1 — or tap ' + pill('pill-purple', icon('shopping-cart', 16, 'on-dark') + ' Make a Sale') + '.',
       'At the top you’ll see <b>CART: Invoice #___</b>. That’s this order’s number.',
       'Use <b>−</b> and <b>+</b> on each menu row to set quantities (the box in the middle shows the count).',
@@ -736,7 +736,7 @@ PAGES['first-time-setup'] = {
   body:
     '<div class="card">' + sectionHead('party-popper','First launch only') +
     steps([
-      'Open the app. You’ll see <b>Welcome to Booth Buddy!</b> with the Booth Buddy wordmark (same as Home).',
+      'Open the app. You’ll see <b>Welcome to OctoVendo!</b> with the OctoVendo wordmark (same as Home).',
       'Enter your <b>business name</b> and <b>first name</b> (last name optional). Tap <b>Continue</b>.',
       'Set a <b>4-digit Pass Code</b>, then confirm it. You can turn Pass Code protection off later in Settings.',
       'On the success screen, tap <b>Go to my shop</b>.',
@@ -909,7 +909,7 @@ PAGES['faq/sales-after-update'] = {
   body:
     '<div class="card">' +
     '<p><b>No.</b> Past sales stay on your device across app updates.</p>' +
-    '<p>When Booth Buddy needs a newer sales-table shape (for example Pay on pickup or cancel fields), it migrates your existing rows in place — including cancelled sales and the line items linked to each Invoice #.</p>' +
+    '<p>When OctoVendo needs a newer sales-table shape (for example Pay on pickup or cancel fields), it migrates your existing rows in place — including cancelled sales and the line items linked to each Invoice #.</p>' +
     info('There is still no cloud backup. Keep CSV exports you care about, and don’t use <b>Forgot your code?</b> unless you mean to erase the shop.') +
     '</div>'
 };

@@ -1,4 +1,4 @@
-# v2 backlog — Booth Buddy
+# v2 backlog — OctoVendo
 
 Deferred work **out of MVP scope**. Pull in after 001–010 demo-ready (or when pain shows up).
 
