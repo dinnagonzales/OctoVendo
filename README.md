@@ -4,9 +4,9 @@ Booth-ready point of sale for craft fairs and markets. Staff ring up sales on de
 
 ## Links
 
-- **Help center:** https://dinnagonzales.github.io/BoothBuddy/
-- **Privacy policy:** https://dinnagonzales.github.io/BoothBuddy/privacy.html
-- **GitHub:** https://github.com/dinnagonzales/BoothBuddy
+- **Help center:** https://dinnagonzales.github.io/OctoVendo/
+- **Privacy policy:** https://dinnagonzales.github.io/OctoVendo/privacy.html
+- **GitHub:** https://github.com/dinnagonzales/OctoVendo
 
 ## App
 
