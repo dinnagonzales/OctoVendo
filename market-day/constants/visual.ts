@@ -3,6 +3,12 @@ import { tokens } from '@/theme/tokens';
 /** Typography, spacing, and radii for staff-facing POS screens. */
 export const fonts = tokens.font;
 
+/** Type scale for onboarding and branded moments. */
+export const typeScale = tokens.typography;
+
+/** Motion durations / language for branded transitions. */
+export const motion = tokens.motion;
+
 export const radii = {
   itemRow: 16,
   cart: 18,

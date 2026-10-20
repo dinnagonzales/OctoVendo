@@ -38,5 +38,9 @@ test('app registers every font face needed for polish screens', () => {
     'Nunito_600SemiBold',
     'Nunito_700Bold',
     'Nunito_800ExtraBold',
+    'PlayfairDisplay_400Regular',
+    'PlayfairDisplay_400Regular_Italic',
+    'PlayfairDisplay_500Medium',
+    'PlayfairDisplay_600SemiBold',
   ]);
 });

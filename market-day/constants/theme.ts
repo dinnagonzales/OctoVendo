@@ -14,15 +14,19 @@ export const colors = {
   ink: c.ink,
   white: c.white,
 
-  /** Screen canvas — soft lavender */
-  screen: c.peach50,
-  /** Card / sheet backdrop — light purple behind white rows */
-  background: c.peach100,
+  /** Main working canvas — warm ivory */
+  screen: c.cream,
+  /** Soft welcome / onboarding backdrop — brand peach */
+  background: c.peach,
   /** Soft accent for tips, callouts, empty states */
   cream: c.cream,
+  /** Mascot / highlight surface */
+  lavender: c.lavender,
+  /** Forest accent (secondary — not default CTA) */
+  forest: c.forest,
 
   /** Muted body text */
-  inkSoft: c.gray400,
+  inkSoft: c.muted,
 
   /** Primary brand actions */
   purple: c.purple,
@@ -50,10 +54,10 @@ export const colors = {
   amberBorder: c.warningBorder,
 
   /** Surfaces & borders */
-  surfaceMuted: c.pink50,
+  surfaceMuted: c.lavender,
   surfaceSubtle: c.cream,
-  border: c.grayLight,
-  borderSubtle: c.peach100,
+  border: c.border,
+  borderSubtle: c.peach200,
   borderFocus: c.purple,
   borderDanger: c.dangerBorder,
   borderSuccess: c.successBorder,

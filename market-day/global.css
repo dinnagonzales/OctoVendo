@@ -4,67 +4,74 @@
 @import 'heroui-native/styles';
 
 @theme {
-  /* Brand palette */
-  --color-peach: #f3e9ff;
-  --color-pink: #ff6b9d;
-  --color-purple: #9b5de5;
-  --color-purple-dark: #7333be;
-  --color-blue: #4fc3f7;
-  --color-blue-dark: #1e93c6;
-  --color-yellow: #ffd93d;
-  --color-yellow-dark: #e0ac00;
-  --color-cream: #fffdf6;
-  --color-gray: #a9a8af;
-  --color-gray-light: #d5d5d8;
-  --color-ink: #2b2340;
+  /* Brand palette — Playful Premium */
+  --color-peach: #f8ded7;
+  --color-pink: #c97b9a;
+  --color-purple: #7969a5;
+  --color-purple-dark: #62528f;
+  --color-blue: #5b8fa8;
+  --color-blue-dark: #3f6f86;
+  --color-yellow: #e6c35c;
+  --color-yellow-dark: #c4a03a;
+  --color-cream: #fffaf7;
+  --color-gray: #a39ba0;
+  --color-gray-light: #e8dedf;
+  --color-ink: #1d1d1b;
   --color-white: #ffffff;
+  --color-lavender: #d8d3ed;
+  --color-forest: #29483f;
+  --color-muted: #686368;
 
   /* Pink / purple scale */
-  --color-pink-50: #f3e9ff;
-  --color-pink-100: #e8d9f8;
-  --color-pink-200: #d4b8f0;
-  --color-pink-300: #b888e8;
-  --color-pink-400: #9b5de5;
-  --color-pink-500: #8550c8;
-  --color-pink-600: #7333be;
+  --color-pink-50: #f8ded7;
+  --color-pink-100: #f0d4cc;
+  --color-pink-200: #d8d3ed;
+  --color-pink-300: #a896c4;
+  --color-pink-400: #7969a5;
+  --color-pink-500: #6b5b96;
+  --color-pink-600: #62528f;
 
   /* Peach / lavender scale */
-  --color-peach-50: #ede9f5;
-  --color-peach-100: #f3e9ff;
-  --color-peach-200: #f3e9ff;
-  --color-peach-300: #c4b8d4;
-  --color-peach-400: #8a7a9a;
+  --color-peach-50: #efeaf6;
+  --color-peach-100: #f8ded7;
+  --color-peach-200: #f0d4cc;
+  --color-peach-300: #d8d3ed;
+  --color-peach-400: #a896c4;
 
   /* Gray scale */
-  --color-gray-50: #e8e4f0;
-  --color-gray-100: #c9c2d4;
-  --color-gray-200: #a9a8af;
-  --color-gray-300: #8c8496;
-  --color-gray-400: #6e6480;
-  --color-gray-500: #4a4356;
+  --color-gray-50: #f3eeee;
+  --color-gray-100: #e8dedf;
+  --color-gray-200: #a39ba0;
+  --color-gray-300: #8a848a;
+  --color-gray-400: #686368;
+  --color-gray-500: #4a454a;
 
   /* Ink scale */
-  --color-ink-100: #e8e4f0;
-  --color-ink-200: #b8b0c4;
-  --color-ink-300: #8a8098;
-  --color-ink-400: #5a5268;
-  --color-ink-500: #2b2340;
+  --color-ink-100: #f3eeee;
+  --color-ink-200: #c4bdbf;
+  --color-ink-300: #8a848a;
+  --color-ink-400: #4a454a;
+  --color-ink-500: #1d1d1b;
 
   /* Functional */
-  --color-success: #4cd787;
-  --color-success-dark: #1fa85c;
-  --color-warning: #ffd93d;
-  --color-warning-dark: #e0ac00;
-  --color-danger: #ff6b6b;
-  --color-danger-dark: #e14545;
+  --color-success: #39785b;
+  --color-success-dark: #2d6049;
+  --color-warning: #e6c35c;
+  --color-warning-dark: #c4a03a;
+  --color-danger: #b54755;
+  --color-danger-dark: #933845;
 
   /* Shape */
   --radius-sm: 8px;
+  --radius-input: 12px;
   --radius-md: 14px;
   --radius-lg: 20px;
+  --radius-xl: 24px;
   --radius-full: 999px;
 
   /* Typography */
+  --font-display: PlayfairDisplay_400Regular, Georgia, serif;
+  --font-display-semibold: PlayfairDisplay_600SemiBold, Georgia, serif;
   --font-heading: Fredoka_600SemiBold, system-ui, sans-serif;
   --font-heading-bold: Fredoka_700Bold, system-ui, sans-serif;
   --font-body: Nunito_400Regular, system-ui, sans-serif;
@@ -75,49 +82,49 @@
   :root {
     @variant light {
       --radius: 1rem;
-      --background: #ede9f5;
-      --foreground: #2b2340;
+      --background: #fffaf7;
+      --foreground: #1d1d1b;
       --surface: #ffffff;
-      --surface-foreground: #2b2340;
-      --accent: #9b5de5;
+      --surface-foreground: #1d1d1b;
+      --accent: #7969a5;
       --accent-foreground: #ffffff;
-      --success: #4cd787;
+      --success: #39785b;
       --success-foreground: #ffffff;
-      --warning: #ffd93d;
-      --warning-foreground: #2b2340;
-      --muted: #6e6480;
-      --border: #d5d5d8;
-      --separator: #f3e9ff;
+      --warning: #e6c35c;
+      --warning-foreground: #1d1d1b;
+      --muted: #686368;
+      --border: #e8dedf;
+      --separator: #f8ded7;
       --default: #ffffff;
-      --default-foreground: #2b2340;
-      --danger: #ff6b6b;
+      --default-foreground: #1d1d1b;
+      --danger: #b54755;
       --danger-foreground: #ffffff;
       --field-background: #ffffff;
-      --field-border: #f3e9ff;
+      --field-border: #e8dedf;
     }
 
     @variant dark {
       /* Match light tokens so Uniwind/HeroUI stay in sync (app is light-only). */
       --radius: 1rem;
-      --background: #ede9f5;
-      --foreground: #2b2340;
+      --background: #fffaf7;
+      --foreground: #1d1d1b;
       --surface: #ffffff;
-      --surface-foreground: #2b2340;
-      --accent: #9b5de5;
+      --surface-foreground: #1d1d1b;
+      --accent: #7969a5;
       --accent-foreground: #ffffff;
-      --success: #4cd787;
+      --success: #39785b;
       --success-foreground: #ffffff;
-      --warning: #ffd93d;
-      --warning-foreground: #2b2340;
-      --muted: #6e6480;
-      --border: #d5d5d8;
-      --separator: #f3e9ff;
+      --warning: #e6c35c;
+      --warning-foreground: #1d1d1b;
+      --muted: #686368;
+      --border: #e8dedf;
+      --separator: #f8ded7;
       --default: #ffffff;
-      --default-foreground: #2b2340;
-      --danger: #ff6b6b;
+      --default-foreground: #1d1d1b;
+      --danger: #b54755;
       --danger-foreground: #ffffff;
       --field-background: #ffffff;
-      --field-border: #f3e9ff;
+      --field-border: #e8dedf;
     }
   }
 }

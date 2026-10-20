@@ -17,7 +17,7 @@ Kid-friendly POS for iPad testing via **Expo Go** — no Apple Developer account
 ## What's working
 
 - **Home** — Available Items (no sales totals); Market Day ticket banner when open; idle shortcuts (**Start Market Day**, **Update Inventory**, **Go to Sales**) when closed; **Get your shop ready** checklist until first item + Hide (or all optional steps done); **Make a Sale** / **+ Pre-order** when inventory exists
-- **First-run setup** — Welcome splash/profile → Pass Code → success → Home checklist for first item / optional payment & logo
+- **First-run setup** — Premium splash (peach canvas + `logo-app` + tagline) → profile → Pass Code → success → Home checklist for first item / optional payment & logo
 - **Make a Sale** — always available when inventory exists; attaches to active Market Day when one is open; off-day sales save to Running Tab with optional name/notes
 - **+ Pre-order** — required name/notes/complete date, Pay on pickup, global catalog, always Running Tab (even during a fair)
 - **Sell flow** — menu **− / qty / +** steppers (**0** when not in cart), read-only cart (**Name(qty)** + **N items** total), payment (**Order Total**; Venmo/Zelle pay-to card when configured; amount-entry for Cash and Venmo/Zelle: **Amount Paid** → chips → change → **Keep change?**; payment-method selectors below; pay on pickup for preorders)
@@ -36,11 +36,12 @@ Kid-friendly POS for iPad testing via **Expo Go** — no Apple Developer account
 
 ## UI
 
-Visual design matches [../mocks/screens.html](../mocks/screens.html).
+**Playful Premium** brand direction: warm peach welcome surfaces, ivory working canvas, lavender accents, purple primary actions. Staff/POS layout still largely matches [../mocks/screens.html](../mocks/screens.html); onboarding is being redesigned page-by-page (Phase 1 = splash).
 
 - **[HeroUI Native](https://heroui.com/)** + **Uniwind** (Tailwind-style `className` where convenient)
-- **Fonts** — Fredoka (headings/prices/buttons), Nunito (body/labels); loaded via `expo-font` in `app/_layout.tsx`
-- **Tokens** — `constants/visual.ts` (fonts, radii, spacing, touch targets), `constants/theme.ts` (colors), `global.css` (HeroUI semantic tokens)
+- **Fonts** — Playfair Display (onboarding/display), Fredoka (POS headings/prices), Nunito (body/labels); loaded via `expo-font` in `app/_layout.tsx`
+- **Tokens** — `theme/tokens.ts` (palette, type scale, motion, radii, control states); `constants/theme.ts` + `constants/visual.ts` semantic aliases; `global.css` (HeroUI/Uniwind)
+- **Brand art** — `assets/images/logo-app.png`, `logo-long.png`, `octo.png`, `octo-buddy.png`, `celebrate.png` (use real assets; do not approximate)
 - **Layout helpers** — `components/Screen.tsx` (`Screen`, `ScreenHeader`, `SectionLabel`, `ItemCard`)
 - **Reusable UI** — `components/ui/` (`Button`, `Card`, `Chip`, `Input`, …)
 
@@ -63,10 +64,11 @@ __tests__/        domain + visual-polish tests
 npm test
 ```
 
-Includes `visual-polish-test.ts` — locks typography, radii, spacing, and font registration to the mock.
+Includes `visual-polish-test.ts` (fonts/radii/spacing) and `theme-tokens-test.ts` (Playful Premium palette + motion).
 
 ## Next build steps
 
+- **Onboarding Phase 2** — Profile redesign + keyboard-avoidance (see [../NOTES.md](../NOTES.md))
 - **009 HITL** — iPad visual pass with kid at the booth
 - Item photos ([008](../scratch/issues/008-item-photos.md))
 - App Store / TestFlight build ([010](../scratch/issues/010-app-store-submission.md))

@@ -40,10 +40,11 @@ Lightweight tracker for **OctoVendo** MVP work. Not synced to GitHub or any exte
 ## Already shipped (scaffold + post-grill)
 
 - Rebrand → **OctoVendo** (Owner / Staff copy, logo palette)
+- Playful Premium Phase 1 — brand tokens + premium splash (Profile+ keyboard still open)
 - Staff sell flow: Home Items → **Make a Sale** or **+ Pre-order** → menu steppers + cart → payment → celebration → Fix
 - Off-day / Running Tab checkout + **Sales** tab all-time list + date-range CSV export UI
 - Preorders tab: prep summary, overdue/upcoming, printable export, pickup payment, **Mark Delivered**
 - Owner area tabs: Events · Inventory · Preorders · Sales · Settings (business / passcode / Zelle·Venmo)
 - Onboarding: welcome → Pass Code → optional profile → first Item; Home empty-state **Add Item**
-- SQLite schema · HeroUI Native + Uniwind · Fredoka/Nunito visual tokens
+- SQLite schema · HeroUI Native + Uniwind · Playful Premium tokens (Playfair + Fredoka + Nunito)
 - v2-002 change Pass Code — done (see [v2/](v2/))

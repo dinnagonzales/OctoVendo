@@ -158,14 +158,15 @@ Price and cost snapshot at checkout. Owner edit re-snapshots on save.
 
 ## Visual design
 
-Typography and layout follow [mocks/screens.html](./mocks/screens.html):
+**Playful Premium** brand direction (tokens in `market-day/theme/tokens.ts`). POS layout still largely follows [mocks/screens.html](./mocks/screens.html); onboarding is redesigned page-by-page.
 
-- **Fredoka** — headings, prices, buttons
-- **Nunito** — body copy, section labels
-- **Palette** — purple/lavender screen (`#F3E9FF`), ink/cream accents (see `market-day/constants/theme.ts`)
-- **Tokens** — radii, spacing, and touch targets in `market-day/constants/visual.ts` (tested in `visual-polish-test.ts`)
+- **Playfair Display** — onboarding / celebratory display typography
+- **Fredoka** — POS headings, prices, buttons
+- **Nunito** — body copy, section labels, controls
+- **Palette** — peach welcome (`#F8DED7`), ivory working canvas (`#FFFAF7`), lavender accents, purple primary (`#7969A5`)
+- **Tokens** — colors, type scale, motion, radii, spacing, and touch targets (tested in `theme-tokens-test.ts` + `visual-polish-test.ts`)
 
-Screens polished for the Sep 18 fair: Home, sell, payment, celebration, owner settings. Final **HITL** pass: staff + owner iPad review at the booth.
+Screens polished for the Sep 18 fair: Home, sell, payment, celebration, owner settings. Premium splash shipped (Phase 1). Final **HITL** pass: staff + owner iPad review at the booth.
 
 ## Out of scope for v0.2
 

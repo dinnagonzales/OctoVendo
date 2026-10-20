@@ -6,7 +6,7 @@
 
 ## What shipped
 
-On first launch: **Welcome to OctoVendo!** (splash + shop/profile) → set numeric **Pass Code** → success → **Home**. Adding the first **Item** (and optional payment/logo) happens on Home via **Get your shop ready**. After the required first item, **Hide** dismisses that checklist forever. Idle Home (no Market Day) always shows **Start Market Day**, **Update Inventory**, and **Go to Sales**.
+On first launch: premium **splash** (peach canvas, stacked `logo-app`, tagline) → shop/profile → set numeric **Pass Code** → success → **Home**. Adding the first **Item** (and optional payment/logo) happens on Home via **Get your shop ready**. After the required first item, **Hide** dismisses that checklist forever. Idle Home (no Market Day) always shows **Start Market Day**, **Update Inventory**, and **Go to Sales**. Returning users skip unfinished steps via existing setup detection (splash still resolves destination from real init).
 
 Code stored hashed in secure storage. No demo seed data. Pass Code gate starts unlocked; owner locks from the header when leaving.
 

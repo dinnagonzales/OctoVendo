@@ -45,7 +45,8 @@ export default function SetupScreen() {
 
   const [step, setStep] = useState<Step>('splash');
   const [navDirection, setNavDirection] = useState<NavDirection>('crossfade');
-  const [splashProgress, setSplashProgress] = useState(0.08);
+  /** 0 while initializing; jumps to 1 when real setup resolution finishes. No fabricated mid-progress. */
+  const [splashProgress, setSplashProgress] = useState(0);
 
   const [businessName, setBusinessName] = useState('');
   const [firstName, setFirstName] = useState('');
@@ -78,12 +79,6 @@ export default function SetupScreen() {
     loadStarted.current = true;
 
     let cancelled = false;
-    const tick = setInterval(() => {
-      setSplashProgress((current) => {
-        if (current >= 0.85) return current;
-        return Math.min(0.85, current + 0.04);
-      });
-    }, 90);
 
     void (async () => {
       try {
@@ -115,14 +110,11 @@ export default function SetupScreen() {
           afterSplashRef.current = 'profile';
           setSplashProgress(1);
         }
-      } finally {
-        clearInterval(tick);
       }
     })();
 
     return () => {
       cancelled = true;
-      clearInterval(tick);
     };
   }, [db]);
 
@@ -209,7 +201,8 @@ export default function SetupScreen() {
 const styles = StyleSheet.create({
   root: {
     flex: 1,
-    backgroundColor: colors.background,
+    // Peach keeps splash → next crossfade from flashing a different canvas.
+    backgroundColor: colors.peach,
   },
   step: {
     flex: 1,

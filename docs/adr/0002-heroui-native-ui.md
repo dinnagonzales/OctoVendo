@@ -1,6 +1,6 @@
 # HeroUI Native for reusable UI
 
-Market Day uses [HeroUI Native](https://heroui.com/) (the React Native sibling of HeroUI React) with [Uniwind](https://docs.uniwind.dev/) for Tailwind-style `className` styling. Shared primitives live in `components/ui/` (granular imports) and layout helpers in `components/Screen.tsx`. Theme tokens in `global.css` map the mock palette (purple accent, lavender background) to HeroUI CSS variables.
+Market Day uses [HeroUI Native](https://heroui.com/) (the React Native sibling of HeroUI React) with [Uniwind](https://docs.uniwind.dev/) for Tailwind-style `className` styling. Shared primitives live in `components/ui/` (granular imports) and layout helpers in `components/Screen.tsx`. Theme tokens in `theme/tokens.ts` and `global.css` map the **Playful Premium** palette (peach welcome, ivory working canvas, lavender accents, purple primary `#7969A5`) to HeroUI CSS variables.
 
 **Considered options:** Raw React Native StyleSheet only (fast start, no reusable system), NativeWind (mature but HeroUI Native officially targets Uniwind), HeroUI React (web only — not for App Store iOS builds).
 

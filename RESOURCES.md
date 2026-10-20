@@ -38,6 +38,16 @@
 - [Apple Developer Forums — App Store Connect](https://developer.apple.com/forums/tags/app-store-connect)
   Use for: Kids Category review rejections and clarification.
 
+- [Apple — Auto-renewable Subscriptions](https://developer.apple.com/app-store/subscriptions/)
+  Free trials, post-trial billing, what to disclose before purchase. Use for: Pro paywall / trial design.
+- [Apple — Implementing introductory offers (StoreKit)](https://developer.apple.com/documentation/storekit/implementing-introductory-offers-in-your-app)
+  Free trial vs pay-up-front vs pay-as-you-go; eligibility. Use for: wiring subscription intro offers.
+- [App Store Review Guidelines — 3.1 Payments](https://developer.apple.com/app-store/review/guidelines/#payments)
+  IAP required for digital unlocks; restore purchases; “XX-day Trial” non-consumable pattern. Use for: paywall compliance.
+- [Expo + RevenueCat IAP tutorial](https://expo.dev/blog/expo-revenuecat-in-app-purchase-tutorial)
+  Practical Expo path (dev build required; not Expo Go). Use for: implementing Pro later — not for Kids Category privacy alone.
+
 ## Gaps
 
 - No curated resource yet for COPPA checklist specific to "local-only + parent-initiated email share" pattern. Will add after more research.
+- No decision yet on trial model for Market Day Pro (Apple intro subscription vs app-timed trial). Capture in an ADR when chosen.
