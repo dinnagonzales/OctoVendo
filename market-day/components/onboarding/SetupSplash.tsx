@@ -88,9 +88,12 @@ export function SetupSplash({ progress, reduceMotion = false, onReady }: SetupSp
 
   useEffect(() => {
     if (!ready || !onReady) return;
-    // Allow a brief exit beat so the parent crossfade does not feel abrupt.
-    // Reduced motion skips the extra wait.
-    const timer = setTimeout(onReady, reduceMotion ? 0 : Math.min(180, SETUP_CROSSFADE_MS));
+    // Wait for the logo entrance to finish before exiting. Fast init used to
+    // advance in ~180ms and skip straight to Profile (still the old layout).
+    const holdMs = reduceMotion
+      ? 0
+      : SETUP_SPLASH_TAGLINE_DELAY_MS + SETUP_SPLASH_TAGLINE_MS + Math.min(120, SETUP_CROSSFADE_MS);
+    const timer = setTimeout(onReady, holdMs);
     return () => clearTimeout(timer);
   }, [ready, onReady, reduceMotion]);
 
