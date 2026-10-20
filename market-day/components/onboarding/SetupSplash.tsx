@@ -23,6 +23,13 @@ import { tokens } from '@/theme/tokens';
 const TAGLINE = 'Simple tools for bigger days.';
 const LOADING_CAPTION = 'Getting things ready…';
 const LOGO_OFFSET_Y = 12;
+/**
+ * logo-app.png is square with ~10% peach padding below the wordmark (~22px at
+ * 220pt). marginTop 0 yields ~16–24px visual gap from wordmark to tagline.
+ */
+const TAGLINE_MARGIN_TOP = 0;
+/** Slight upward optical centering for the brand cluster. */
+const BRAND_OPTICAL_LIFT = -12;
 
 type SetupSplashProps = {
   /**
@@ -41,7 +48,7 @@ export function SetupSplash({ progress, reduceMotion = false, onReady }: SetupSp
   const logoTranslateY = useSharedValue(reduceMotion ? 0 : LOGO_OFFSET_Y);
   const taglineOpacity = useSharedValue(reduceMotion ? 1 : 0);
   const taglineTranslateY = useSharedValue(reduceMotion ? 0 : LOGO_OFFSET_Y);
-  const footerOpacity = useSharedValue(reduceMotion ? 1 : 0);
+  const loadingOpacity = useSharedValue(reduceMotion ? 1 : 0);
 
   useEffect(() => {
     if (reduceMotion) {
@@ -49,7 +56,7 @@ export function SetupSplash({ progress, reduceMotion = false, onReady }: SetupSp
       logoTranslateY.value = 0;
       taglineOpacity.value = 1;
       taglineTranslateY.value = 0;
-      footerOpacity.value = 1;
+      loadingOpacity.value = 1;
       return;
     }
 
@@ -73,12 +80,12 @@ export function SetupSplash({ progress, reduceMotion = false, onReady }: SetupSp
       withTiming(0, { duration: SETUP_SPLASH_TAGLINE_MS, easing: easeOut }),
     );
 
-    footerOpacity.value = withDelay(
+    loadingOpacity.value = withDelay(
       SETUP_SPLASH_TAGLINE_DELAY_MS + 40,
       withTiming(1, { duration: motion.screenEnter, easing: easeOut }),
     );
   }, [
-    footerOpacity,
+    loadingOpacity,
     logoOpacity,
     logoTranslateY,
     reduceMotion,
@@ -88,8 +95,7 @@ export function SetupSplash({ progress, reduceMotion = false, onReady }: SetupSp
 
   useEffect(() => {
     if (!ready || !onReady) return;
-    // Wait for the logo entrance to finish before exiting. Fast init used to
-    // advance in ~180ms and skip straight to Profile (still the old layout).
+    // Advance after entrance completes — no artificial startup padding.
     const holdMs = reduceMotion
       ? 0
       : SETUP_SPLASH_TAGLINE_DELAY_MS + SETUP_SPLASH_TAGLINE_MS + Math.min(120, SETUP_CROSSFADE_MS);
@@ -107,33 +113,41 @@ export function SetupSplash({ progress, reduceMotion = false, onReady }: SetupSp
     transform: [{ translateY: taglineTranslateY.value }],
   }));
 
-  const footerStyle = useAnimatedStyle(() => ({
-    opacity: footerOpacity.value,
+  const loadingStyle = useAnimatedStyle(() => ({
+    opacity: loadingOpacity.value,
   }));
 
   return (
     <SafeAreaView style={styles.page} edges={['top', 'bottom', 'left', 'right']}>
-      <View style={styles.center}>
-        <Animated.View style={[styles.logoBlock, logoStyle]}>
-          <OctoVendoLogo variant="app" style={styles.logo} accessibilityLabel="OctoVendo" />
+      <View style={styles.stage}>
+        {/*
+          Brand cluster is centered in the full stage. Loading is docked to the
+          bottom independently so it cannot push the tagline away from the logo.
+        */}
+        <View style={styles.brandStage} pointerEvents="box-none">
+          <View style={styles.brandGroup}>
+            <Animated.View style={logoStyle}>
+              <OctoVendoLogo variant="app" style={styles.logo} accessibilityLabel="OctoVendo" />
+            </Animated.View>
+            <Animated.Text style={[styles.tagline, taglineStyle]}>{TAGLINE}</Animated.Text>
+          </View>
+        </View>
+
+        <Animated.View
+          style={[styles.loadingDock, loadingStyle]}
+          accessibilityRole="progressbar"
+          accessibilityLabel={LOADING_CAPTION}
+          accessibilityState={{ busy: !ready }}>
+          <ActivityIndicator
+            size="small"
+            // Soft lavender reads weakly on peach; Octo Purple stays on-brand and visible.
+            color={colors.purple}
+            accessibilityElementsHidden
+            importantForAccessibility="no"
+          />
+          <Text style={styles.caption}>{LOADING_CAPTION}</Text>
         </Animated.View>
-
-        <Animated.Text style={[styles.tagline, taglineStyle]}>{TAGLINE}</Animated.Text>
       </View>
-
-      <Animated.View
-        style={[styles.footer, footerStyle]}
-        accessibilityRole="progressbar"
-        accessibilityLabel={LOADING_CAPTION}
-        accessibilityState={{ busy: !ready }}>
-        <ActivityIndicator
-          size="small"
-          color={colors.purple}
-          accessibilityElementsHidden
-          importantForAccessibility="no"
-        />
-        <Text style={styles.caption}>{LOADING_CAPTION}</Text>
-      </Animated.View>
     </SafeAreaView>
   );
 }
@@ -143,37 +157,44 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: colors.peach,
   },
-  center: {
+  stage: {
     flex: 1,
+  },
+  brandStage: {
+    ...StyleSheet.absoluteFill,
     alignItems: 'center',
     justifyContent: 'center',
     paddingHorizontal: tokens.spacing[8],
-    gap: tokens.spacing[6],
   },
-  logoBlock: {
+  brandGroup: {
     alignItems: 'center',
-    justifyContent: 'center',
+    // Shrink-wrap logo + tagline as one unit (not a flex:1 column).
+    transform: [{ translateY: BRAND_OPTICAL_LIFT }],
   },
   logo: {
-    width: 200,
-    maxWidth: '72%',
+    width: 220,
+    maxWidth: '70%',
     aspectRatio: 1,
   },
   tagline: {
+    marginTop: TAGLINE_MARGIN_TOP,
     fontFamily: fonts.display.italic,
     fontSize: typeScale.body.fontSize,
     lineHeight: typeScale.body.lineHeight,
     color: colors.ink,
     textAlign: 'center',
     maxWidth: 280,
+    paddingHorizontal: tokens.spacing[4],
   },
-  footer: {
+  loadingDock: {
+    position: 'absolute',
+    left: 0,
+    right: 0,
+    bottom: tokens.spacing[12], // 48px above safe-area bottom; scales with token
     alignItems: 'center',
     justifyContent: 'center',
     gap: tokens.spacing[3],
     paddingHorizontal: tokens.spacing[6],
-    paddingBottom: tokens.spacing[4],
-    minHeight: tokens.touchTarget.min + tokens.spacing[6],
   },
   caption: {
     fontFamily: fonts.body.semiBold,
